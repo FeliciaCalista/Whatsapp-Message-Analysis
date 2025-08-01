@@ -1,33 +1,37 @@
-# 🎮 Hangman Game (Console Version)
+# WhatsApp Message Analysis
 
-This is a simple terminal-based **Hangman game** written in Python.  
-The game allows users to input up to 5 custom words, then randomly selects one word per round for the player to guess.
-
----
-
-## 🕹️ Features
-
-- Custom word input (1–5 words)
-- Random word selection per round
-- ASCII art hangman drawing with 7 stages
-- Tracks guessed letters
-- Prevents duplicate guesses
-- Game summary with score at the end
+This project is a **Python-based data analysis tool** designed to visualize insights from a WhatsApp group chat export. It uses `matplotlib` to generate 4 visualizations based on the uploaded `.txt` chat file.
 
 ---
 
-## 📦 Requirements
+## Features
 
-- Python 3.x  
-(Uses only standard libraries: `random`)
+- **Find the 3 busiest chat days** and their hourly distribution
+- **Pie chart of top contributors** (who sends the most messages)
+- **Bar chart of top 5 most-used words** (excluding media)
+- **Bar chart of total messages per day** (full week view)
 
 ---
 
-## ▶️ How to Play
+## Technologies Used
 
-1. Run the game:
-   ```bash
-   python hangman.py
+- Python 3.x
+- [matplotlib](https://matplotlib.org/)
+
+> All data processing is done with basic Python (no Pandas required).
+
+---
+
+## Input Format
+
+Your WhatsApp exported chat file should be named: "Whatsapp Message"
+Each line in the file must follow this format: DD/MM/YYYY, HH:MM - Name: Message
+
+## Output Charts
+- Line chart showing chat activity over the 3 busiest days by hour
+- Pie chart showing who sent the most messages
+- Bar chart of top 5 words (excluding <Media omitted>)
+- Bar chart of messages sent per day (1-week snapshot)
 
 ## License
 
@@ -37,4 +41,3 @@ This project is licensed under the **MIT License** – you are free to use, modi
 - [@pompom-cl](https://github.com/pompom-cl)
 - [@FeliciaCalista](https://github.com/FeliciaCalista)
 - [@gracehutapea1208](https://github.com/gracehutapea1208)
-- [@graceellenn](https://github.com/graceellenn)
