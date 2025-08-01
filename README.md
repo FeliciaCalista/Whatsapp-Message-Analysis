@@ -30,7 +30,7 @@ Each line in the file must follow this format: DD/MM/YYYY, HH:MM - Name: Message
 ## Output Charts
 - Line chart showing chat activity over the 3 busiest days by hour
 - Pie chart showing who sent the most messages
-- Bar chart of top 5 words (excluding <Media omitted>)
+- Bar chart of top 5 words 
 - Bar chart of messages sent per day (1-week snapshot)
 
 ## License
